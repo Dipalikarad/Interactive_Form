@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form id="myForm" novalidate>
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <div class="error" id="nameError">Name is required (letters only).</div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="error" id="emailError">Enter a valid email address.</div>
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+        <div class="error" id="phoneError">Enter a valid 10-digit phone number.</div>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter a strong password">
+        <div class="error" id="passwordError">Password must be 8+ chars, include uppercase, lowercase, number & symbol.</div>
+      </div>
+
+      <!-- Button -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Success -->
+    <div class="success-message" id="successMessage">✅ Form submitted successfully!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
